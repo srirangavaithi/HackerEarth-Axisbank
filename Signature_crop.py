@@ -54,6 +54,7 @@ def main():
 	height_image,width_image = resized_image.shape
 	gradient_matrix = np.array(gradient_image(resized_image)) * 255
 	cv2.imshow('g_image',gradient_matrix)
+	cv2.imwrite('g_image.png',gradient_matrix)
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
 
